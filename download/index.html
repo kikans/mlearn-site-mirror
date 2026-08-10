@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Download mLearn for Windows, macOS, or Linux. Interactive subtitles, manga reader, voice cloning, AI tutor, and SRS flashcards — all in one app. Free and offline-ready." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Download mLearn - Language Learning App" />
+    <meta property="og:description" content="Download mLearn for Windows, macOS, or Linux. Interactive subtitles, manga reader, voice cloning, AI tutor, and flashcards." />
+    <meta property="og:url" content="https://mlearn.kikan.net/download/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="mLearn" />
+    <meta property="og:image" content="https://mlearn.kikan.net/assets/256x256.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Download mLearn - Language Learning App" />
+    <meta name="twitter:description" content="Download mLearn for Windows, macOS, or Linux." />
+    <meta name="twitter:image" content="https://mlearn.kikan.net/assets/256x256.png" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mlearn.kikan.net/download/" />
+
+    <!-- JSON-LD: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "mLearn",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Windows, macOS, Linux",
+      "description": "Learn any language from whatever you're already watching. Interactive subtitles, manga reader, voice cloning, AI tutor, and SRS flashcards.",
+      "url": "https://mlearn.kikan.net",
+      "downloadUrl": "https://mlearn.kikan.net/download/",
+      "image": "https://mlearn.kikan.net/assets/256x256.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <title>Download mLearn - Language Learning App for Windows, macOS & Linux</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/256x256.png">
+    <style>
+        .nav {
+            position: absolute;
+            top: var(--nav-top-offset);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: min(980px, calc(100vw - 48px));
+            max-width: none;
+            padding: 0 16px;
+            border-radius: 18px;
+            border: 1px solid var(--panel-border-strong);
+            background: var(--panel-bg);
+            box-shadow: var(--panel-shadow);
+            height: 56px;
+            gap: 16px;
+            align-items: center;
+            box-sizing: border-box;
+            color: var(--color);
+            font-size: 13px;
+            z-index: 1000;
+        }
+        .nav-c {
+            position: fixed;
+            width: min(980px, calc(100vw - 48px));
+            clip-path: inset(var(--nav-top-offset) 0 calc(100% - 56px - var(--nav-top-offset)) 0 round 16px);
+            user-select: none;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            backdrop-filter: blur(24px) saturate(140%);
+            -webkit-backdrop-filter: blur(24px) saturate(140%);
+            z-index: 1000;
+        }
+        .nav-bg {
+            top: 0;
+            height: calc(24px + 56px);
+            width: 100%;
+            position: fixed;
+            left: 0;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            background: var(--before-nav-bg);
+            pointer-events: none;
+            mask-image: linear-gradient(to bottom, #000 20%, transparent 80%);
+            z-index: 999;
+        }
+        .nav-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--color);
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        .nav-brand__icon {
+            width: 28px;
+            height: 28px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: none;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            flex: 1;
+            min-width: 0;
+        }
+        .nav-item {
+            min-height: 36px;
+            padding: 0 10px;
+            border: 0;
+            border-radius: 999px;
+            background: transparent;
+            color: var(--faint-text);
+            font: inherit;
+            text-decoration: none;
+            transition: color 0.2s, background 0.2s;
+        }
+        .nav-item:hover {
+            color: var(--color);
+            background: var(--highlight);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        .nav-actions .btn {
+            padding: 0 16px;
+            border-radius: 999px;
+            background: var(--btn-light-bg);
+            color: var(--bg-primary);
+            height: 36px;
+            transition: background 0.2s, transform 0.2s, color 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: none;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+        .nav-actions .btn:hover {
+            background: #fff;
+            transform: translateY(-1px);
+        }
+        .nav-actions .btn-outline {
+            background: transparent;
+            border: 1px solid var(--card-border);
+            color: var(--color);
+        }
+        .nav-actions .btn-outline:hover {
+            background: var(--panel-bg-strong);
+            color: var(--color);
+            transform: translateY(-1px);
+        }
+        .nav a:not(.btn),
+        .nav a:not(.btn):visited,
+        .download-mobile-menu a:not(.btn),
+        .download-mobile-menu a:not(.btn):visited {
+            color: var(--text-translucent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav .nav-item:hover,
+        .nav .nav-item:hover:visited,
+        .download-mobile-menu .nav-item:hover,
+        .download-mobile-menu .nav-item:hover:visited {
+            color: var(--color);
+        }
+        .mobile-quick-download,
+        .hamburger-btn,
+        .download-mobile-menu {
+            display: none;
+        }
+        .hamburger-btn {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+        }
+        .hamburger-line {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 2px;
+            background: var(--color);
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .hamburger-btn[aria-expanded="true"] .hamburger-line:first-child {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .hamburger-btn[aria-expanded="true"] .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-btn[aria-expanded="true"] .hamburger-line:last-child {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+        .nav-brand:focus-visible,
+        .nav-item:focus-visible,
+        .nav-actions .btn:focus-visible,
+        .mobile-quick-download:focus-visible,
+        .hamburger-btn:focus-visible {
+            outline: 1px solid rgba(185, 196, 255, 0.75);
+            outline-offset: 2px;
+        }
+        .download-mobile-menu[hidden] {
+            display: none;
+        }
+        @media only screen and (max-width: 1000px) {
+            .nav-links,
+            .nav-actions {
+                display: none;
+            }
+            .hamburger-btn {
+                display: flex;
+                flex-shrink: 0;
+            }
+            .nav a.mobile-quick-download,
+            .nav a.mobile-quick-download:visited {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 36px;
+                margin-left: auto;
+                padding: 0 13px;
+                border-radius: 9px;
+                background: var(--btn-light-bg);
+                color: var(--bg-primary);
+                font-size: 13px;
+                font-weight: 650;
+                text-decoration: none;
+            }
+            .download-mobile-menu:not([hidden]) {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: calc(var(--nav-top-offset) + 64px);
+                left: 50%;
+                transform: translateX(-50%);
+                width: min(980px, calc(100vw - 48px));
+                box-sizing: border-box;
+                padding: 12px 16px;
+                border: 1px solid var(--panel-border-strong);
+                border-radius: 18px;
+                background: var(--panel-bg-strong);
+                box-shadow: var(--panel-shadow);
+                backdrop-filter: blur(24px) saturate(140%);
+                -webkit-backdrop-filter: blur(24px) saturate(140%);
+                z-index: 1001;
+            }
+            .download-mobile-menu .nav-brand {
+                min-height: 44px;
+                padding: 6px 10px 10px;
+                box-sizing: border-box;
+            }
+            .download-mobile-links,
+            .download-mobile-actions {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                padding: 8px 0;
+                border-top: 1px solid var(--card-border);
+            }
+            .download-mobile-menu .nav-item {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                min-height: 44px;
+                padding: 0 10px;
+                border-radius: 12px;
+            }
+            .download-mobile-actions .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 44px;
+                box-sizing: border-box;
+                border-radius: 12px;
+                background: var(--btn-light-bg);
+                color: var(--bg-primary);
+                font-weight: 650;
+                text-decoration: none;
+            }
+            .download-mobile-actions .btn-outline,
+            .download-mobile-actions .btn-outline:visited {
+                border: 1px solid var(--card-border);
+                background: transparent;
+                color: var(--color);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/download/download-nav.css">
+</head>
+<body>
+    <div class="nav-bg"></div>
+    <div class="nav-c">
+        <div class="nav">
+            <a class="nav-brand" href="/" aria-label="mLearn home">
+                <img class="nav-brand__icon" src="/assets/256x256.png" alt="">
+                <span>mLearn</span>
+            </a>
+            <div class="nav-links">
+                <a class="nav-item faint" href="/#features">Features</a>
+                <a class="nav-item faint" href="/#usage">How it works</a>
+                <a class="nav-item faint" href="/tutorial">Learn</a>
+                <a class="nav-item faint" href="https://github.com/adrianvla/mLearn" target="_blank" rel="noopener noreferrer" data-analytics-location="download_navbar">GitHub ↗</a>
+            </div>
+            <div class="nav-actions">
+                <a href="/download/" class="btn btn-outline" aria-current="page" data-analytics-location="download_navbar">Download</a>
+                <a href="/auth/login" class="btn">Log in</a>
+            </div>
+            <a class="mobile-quick-download" href="/download/" aria-current="page" data-analytics-location="download_mobile_navbar">Download</a>
+            <button class="hamburger-btn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="download-mobile-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </div>
+    <div class="download-mobile-menu" id="download-mobile-menu" hidden>
+        <a class="nav-brand" href="/" aria-label="mLearn home">
+            <img class="nav-brand__icon" src="/assets/256x256.png" alt="">
+            <span>mLearn</span>
+        </a>
+        <div class="download-mobile-links">
+            <a class="nav-item faint" href="/#features">Features</a>
+            <a class="nav-item faint" href="/#usage">How it works</a>
+            <a class="nav-item faint" href="/tutorial">Learn</a>
+            <a class="nav-item faint" href="https://github.com/adrianvla/mLearn" target="_blank" rel="noopener noreferrer" data-analytics-location="download_mobile_menu">GitHub ↗</a>
+        </div>
+        <div class="download-mobile-actions">
+            <a href="/download/" class="btn btn-outline" aria-current="page" data-analytics-location="download_mobile_menu">Download</a>
+            <a href="/auth/login" class="btn">Log in</a>
+        </div>
+    </div>
+    <main>
+        <section class="download">
+            <h1 class="animate-blur already-visible">Download mLearn</h1>
+            <h2 class="translucent">Select your platform</h2>
+            <div class="separator"></div>
+            <div class="platforms" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-template-areas:'. . . .'">
+                <a href="arch-chooser#windows">
+                    <div class="card left-spotlight highlight windows card-iconless">
+                        <div class="card-content">
+                            <p>Windows</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="auto#macos">
+                    <div class="card left-spotlight highlight macos card-iconless">
+                        <div class="card-content">
+                            <p>macOS</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="arch-chooser#linux">
+                    <div class="card left-spotlight highlight linux card-iconless">
+                        <div class="card-content">
+                            <p>Linux</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="extension/">
+                    <div class="card left-spotlight highlight card-iconless">
+                        <div class="card-content">
+                            <p>Extension</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="/download/download-nav.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>

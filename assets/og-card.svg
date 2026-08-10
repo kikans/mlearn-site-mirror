@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0c0e"/>
+      <stop offset="100%" stop-color="#08090a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(120,180,255,0.08)"/>
+      <stop offset="50%" stop-color="rgba(120,180,255,0.02)"/>
+      <stop offset="100%" stop-color="rgba(90,200,140,0.06)"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78b4ff"/>
+      <stop offset="100%" stop-color="#5ac88c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03" stroke="#fff" stroke-width="0.5">
+    <line x1="0" y1="70" x2="1200" y2="70"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="490" x2="1200" y2="490"/>
+    <line x1="0" y1="560" x2="1200" y2="560"/>
+  </g>
+
+  <!-- Accent bar at top -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#accent)"/>
+
+  <!-- Brand mark (stylized M) -->
+  <g transform="translate(100, 120)">
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#f7f8f8" letter-spacing="-2">mLearn</text>
+    <rect x="0" y="78" width="260" height="2" rx="1" fill="url(#accent)" opacity="0.6"/>
+  </g>
+
+  <!-- Tagline -->
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="rgba(247,248,248,0.85)" x="100" y="270" letter-spacing="-0.5">
+    Supercharge language learning
+  </text>
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="rgba(247,248,248,0.85)" x="100" y="320" letter-spacing="-0.5">
+    by immersion
+  </text>
+
+  <!-- Feature pills -->
+  <g transform="translate(100, 400)">
+    <rect width="210" height="36" rx="18" fill="rgba(120,180,255,0.12)"/>
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#78b4ff" x="18" y="24">Interactive Subtitles</text>
+  </g>
+  <g transform="translate(330, 400)">
+    <rect width="170" height="36" rx="18" fill="rgba(90,200,140,0.12)"/>
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#5ac88c" x="18" y="24">Manga Reader</text>
+  </g>
+  <g transform="translate(520, 400)">
+    <rect width="130" height="36" rx="18" fill="rgba(255,200,80,0.12)"/>
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#ffc850" x="18" y="24">AI Tutor</text>
+  </g>
+  <g transform="translate(100, 450)">
+    <rect width="180" height="36" rx="18" fill="rgba(200,140,255,0.12)"/>
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#c88cff" x="18" y="24">SRS Flashcards</text>
+  </g>
+  <g transform="translate(300, 450)">
+    <rect width="200" height="36" rx="18" fill="rgba(255,140,140,0.12)"/>
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#ff8c8c" x="18" y="24">Voice Cloning</text>
+  </g>
+
+  <!-- URL -->
+  <text font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="rgba(247,248,248,0.4)" x="100" y="560">mlearn.kikan.net</text>
+</svg>
