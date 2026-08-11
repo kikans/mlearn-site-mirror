@@ -1,1 +1,0 @@
-import{d as c,c as r}from"./index-DIcPbMq8.js";import{M as o}from"./MirrorNotice-BJAuMi28.js";import"./gsap-CB87Sc6I.js";c(["click"]);c(["click"]);c(["click"]);c(["click"]);c(["click"]);const a=()=>r(o,{});c(["click"]);export{a as DashboardPage};
