@@ -1,5 +1,5 @@
 //get url hash
-const version = "2.9.9";
+const version = "2.9.10";
 
 
 $(document).ready(()=>{
