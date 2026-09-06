@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T17:00:38.371Z",
+  "generatedAt": "2026-09-06T16:09:47.287Z",
   "languages": {
     "cu": {
       "name": "Church Slavonic",
@@ -7,9 +7,9 @@
       "version": "cu-package-2026.07.19",
       "minimumAppVersion": "2.7.0",
       "bundle": {
-        "url": "https://mlearn.kikan.net/language-data/v1/cu/language-package-2026.07.19-2c38fe25c000.tar.gz",
-        "sizeBytes": 346214,
-        "sha256": "2c38fe25c00056d1b731f77c3a03fc9e39c9f1d81d821164c5059aec6600ab94"
+        "url": "https://mlearn.kikan.net/language-data/v1/cu/language-package-2026.07.19-6123224fc14a.tar.gz",
+        "sizeBytes": 20015282,
+        "sha256": "6123224fc14a9a79db98025da5c0499d9afe11b27ac5ff8e647969fe80149dc4"
       },
       "files": [
         {
@@ -18,6 +18,13 @@
           "sizeBytes": 1143243,
           "sha256": "2fec2d68498642eb6c1c72f93130f3fcccb9a048e62fd084e8c4e5d6fcffd394",
           "required": true
+        },
+        {
+          "id": "linguistic-graph",
+          "path": "languages/cu.graph.json",
+          "sizeBytes": 75421435,
+          "sha256": "87fb8f17067079e5dfdc61808fa2559f710485d2e2b836de11ac3c4be05a124a",
+          "required": false
         },
         {
           "id": "font-ponomar",
@@ -50,8 +57,8 @@
         {
           "id": "language-metadata",
           "path": "languages/cu.json",
-          "sizeBytes": 13218,
-          "sha256": "5e3524cdbb5233897f93dd9c250ec242498d9e071259717292046b7dddbe9bb4",
+          "sizeBytes": 13455,
+          "sha256": "720b53c8d6944a8616c556e6851ceb4b6fe4875e9db8ede9ff8c48acbd43e8d4",
           "required": true
         }
       ],
@@ -103,9 +110,9 @@
       "nameTranslated": "Deutsch",
       "version": "de-package-2026.07.19",
       "bundle": {
-        "url": "https://mlearn.kikan.net/language-data/v1/de/language-package-2026.07.19-a106f522b088.tar.gz",
-        "sizeBytes": 232848,
-        "sha256": "a106f522b0888ccda0002c4ef143a77ee74ae191b031caeb6cbceaa2b8a3817a"
+        "url": "https://mlearn.kikan.net/language-data/v1/de/language-package-2026.07.19-3d5f6a9080a3.tar.gz",
+        "sizeBytes": 35322947,
+        "sha256": "3d5f6a9080a3c2f67c6420792b66a6532aa85675124eddc53f355c58088f550c"
       },
       "files": [
         {
@@ -114,6 +121,13 @@
           "sizeBytes": 718803,
           "sha256": "82f2aac92c18696cd2acaabd1ffb936039365973e79a46b21f4cf1f811b93080",
           "required": true
+        },
+        {
+          "id": "linguistic-graph",
+          "path": "languages/de.graph.json",
+          "sizeBytes": 139703046,
+          "sha256": "6b14864396a3284336c87e36db1a979f6aa2b6ff2e69ee92fd68c0dac9701aac",
+          "required": false
         },
         {
           "id": "frequencywords-notice",
@@ -125,8 +139,8 @@
         {
           "id": "language-metadata",
           "path": "languages/de.json",
-          "sizeBytes": 3217,
-          "sha256": "281f146494fe6cfde924250fe06cc29cb8b2d20e7590f4e1eb01c6ff09f6ba82",
+          "sizeBytes": 4034,
+          "sha256": "b533cdd5dc425ad1d38554bc19a0516365076e393f4df32941f73f54bd818284",
           "required": true
         }
       ],
@@ -165,9 +179,9 @@
       "version": "es-package-2026.07.19",
       "minimumAppVersion": "2.7.0",
       "bundle": {
-        "url": "https://mlearn.kikan.net/language-data/v1/es/language-package-2026.07.19-4de85a4f7cf8.tar.gz",
-        "sizeBytes": 227919,
-        "sha256": "4de85a4f7cf84dc98b9c6afaa8a3ca7b31d29520f74e4d79ba8e5332e1219323"
+        "url": "https://mlearn.kikan.net/language-data/v1/es/language-package-2026.07.19-488432748c90.tar.gz",
+        "sizeBytes": 23388895,
+        "sha256": "488432748c901408d44ffe2e1e1cf8b31893bef360ec8a9d0a05647b530f5d30"
       },
       "files": [
         {
@@ -176,6 +190,13 @@
           "sizeBytes": 694245,
           "sha256": "9ecd3a4a0d6c88246da23d2892b5535d9d2571d09938c58753b62c9782ef57f5",
           "required": true
+        },
+        {
+          "id": "linguistic-graph",
+          "path": "languages/es.graph.json",
+          "sizeBytes": 84140522,
+          "sha256": "f28ed2b3e71022aec89a23f267ffec89f07d10815a7072dc5b46cee56e5dcb1d",
+          "required": false
         },
         {
           "id": "frequencywords-notice",
@@ -187,8 +208,8 @@
         {
           "id": "language-metadata",
           "path": "languages/es.json",
-          "sizeBytes": 19241,
-          "sha256": "561f31605089b1160806289a38e773adcc3d049f947c6b8a8dd0d21f2554bdcf",
+          "sizeBytes": 19478,
+          "sha256": "fb151cdfeeb36f04a70214590a29cabd06543ab3c3b6a28a6f9d767a6bf714d3",
           "required": true
         }
       ],
@@ -240,9 +261,9 @@
       "nameTranslated": "日本語",
       "version": "ja-package-2026.07.20",
       "bundle": {
-        "url": "https://mlearn.kikan.net/language-data/v1/ja/language-package-2026.07.20-fddb4651ed8e.tar.gz",
-        "sizeBytes": 82740,
-        "sha256": "fddb4651ed8eb51e7c2e505f9534a53d083bee1120593b8ebd5ba71cc0bdc55f"
+        "url": "https://mlearn.kikan.net/language-data/v1/ja/language-package-2026.07.20-ed82a5b5809d.tar.gz",
+        "sizeBytes": 33440941,
+        "sha256": "ed82a5b5809df027bc2f7fd6899da7c364eef2061dcd300d39552fa22f523907"
       },
       "files": [
         {
@@ -253,10 +274,17 @@
           "required": true
         },
         {
+          "id": "linguistic-graph",
+          "path": "languages/ja.graph.json",
+          "sizeBytes": 159416064,
+          "sha256": "f33dd847b78aa970a99e09728f9935ac0831269b8b949022641df38224dced5b",
+          "required": false
+        },
+        {
           "id": "language-metadata",
           "path": "languages/ja.json",
-          "sizeBytes": 35078,
-          "sha256": "917f56c6e58ae39808c5f64a11cd2c1ef38428253c14e793157aa7dcfc1a05bc",
+          "sizeBytes": 35316,
+          "sha256": "a514bd04dfad78c96b6ca943e320d2d9a918772a2d4b5c63c7baf9b642f50a40",
           "required": true
         }
       ],
@@ -344,11 +372,11 @@
     "ru": {
       "name": "Russian",
       "nameTranslated": "Русский",
-      "version": "ru-package-2026.07.19",
+      "version": "ru-package-2026.08.17",
       "bundle": {
-        "url": "https://mlearn.kikan.net/language-data/v1/ru/language-package-2026.07.19-8361da214361.tar.gz",
-        "sizeBytes": 4059966,
-        "sha256": "8361da214361c660a83dd0adeae838e75c78a2db5d2b2c859bcfcb22e1e97bf3"
+        "url": "https://mlearn.kikan.net/language-data/v1/ru/language-package-2026.08.17-2eea98a8a81f.tar.gz",
+        "sizeBytes": 30593855,
+        "sha256": "2eea98a8a81f5d4582b97bf91f2ffd71cea7b490ae404a89b67e3dea5812d40e"
       },
       "files": [
         {
@@ -357,6 +385,13 @@
           "sizeBytes": 2735320,
           "sha256": "790bd15198fd69b83ab1905a39a234ce9f857bcc3092e963bfe5611f4fa13d1a",
           "required": true
+        },
+        {
+          "id": "linguistic-graph",
+          "path": "languages/ru.graph.json",
+          "sizeBytes": 88521494,
+          "sha256": "c919ccbdbb77e94da78ffd4bc8e612a1c563bd63f7feea8b1a10ec7074c07edc",
+          "required": false
         },
         {
           "id": "frequency-smartool",
@@ -410,8 +445,8 @@
         {
           "id": "language-metadata",
           "path": "languages/ru.json",
-          "sizeBytes": 36219,
-          "sha256": "59d6fb6902879ab0d32dc7b969116a7c9efeb478b8745a3bab305c585c823d86",
+          "sizeBytes": 36504,
+          "sha256": "518d3b32f44d52f6e9eb01af0bcb6f9efc2960247dabce79a9f1dcd16ac9afe8",
           "required": true
         }
       ],
@@ -504,9 +539,9 @@
       "version": "zh-package-2026.07.31",
       "minimumAppVersion": "2.8.0",
       "bundle": {
-        "url": "https://mlearn.kikan.net/language-data/v1/zh/language-package-2026.07.31-c50deb1d53e6.tar.gz",
-        "sizeBytes": 833191,
-        "sha256": "c50deb1d53e64dd8f827e6f11127a7767575aefdf515dd8eef05b42f380c27c6"
+        "url": "https://mlearn.kikan.net/language-data/v1/zh/language-package-2026.07.31-702c13def0b3.tar.gz",
+        "sizeBytes": 28424426,
+        "sha256": "702c13def0b34849f56808d67ef048198685e3c30714ff7ad8b32bf3078ef058"
       },
       "files": [
         {
@@ -515,6 +550,13 @@
           "sizeBytes": 515977,
           "sha256": "e4f1f451ab109d0a6023fb93cd87c53994cdede87bc1dfc54d06ec0304dd31dd",
           "required": true
+        },
+        {
+          "id": "linguistic-graph",
+          "path": "languages/zh.graph.json",
+          "sizeBytes": 104865471,
+          "sha256": "aa39e9051ecd52c02aa9c3560169e5b2d4948a27c1c04aaf338a04f9be8eb7f1",
+          "required": false
         },
         {
           "id": "python-adapter",
@@ -547,8 +589,8 @@
         {
           "id": "language-metadata",
           "path": "languages/zh.json",
-          "sizeBytes": 56363,
-          "sha256": "83d741a9476a9b9476ec53009aba385d25e9e9865deeaec6a4f48801b3b47843",
+          "sizeBytes": 56601,
+          "sha256": "4729e522012af210d2177243623c16ee33188bb29a0b5f4cca50acac5ed1a836",
           "required": true
         }
       ],
