@@ -28,7 +28,7 @@ mLearn can run OCR on images, screenshots, manga, and PDFs. OCR text can be used
 
 ## AI Features
 
-mLearn includes local AI tutoring and contextual explanations where supported. Optional cloud providers can also be used. Cloud jobs include quota tracking for LLM, OCR, and TTS usage.
+mLearn includes local AI tutoring and contextual explanations where supported. Hosted AI is routed through privacy-constrained providers. Cloud jobs include quota tracking for AI, OCR, and TTS usage.
 
 ## Offline Posture
 

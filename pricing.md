@@ -1,6 +1,6 @@
 # Pricing - mLearn
 
-Last updated: 2026-06-24
+Last updated: 2026-09-21
 
 ## Free
 
@@ -18,7 +18,7 @@ Last updated: 2026-06-24
 
 Cloud features are quota-limited to keep shared infrastructure costs predictable.
 
-- LLM quota: 35 requests/month by default
+- Hosted AI allowance: 300 units/day by default. Standard turns use 1 unit; Realtime turns use 2 units.
 - OCR quota: 500 requests/month by default
 - TTS quota: 1000 requests/month by default
 - Backend calls quota: 1000 requests/month by default

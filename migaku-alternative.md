@@ -53,7 +53,7 @@ The gap is narrowing with each mLearn release, and the feature list above shows 
 
 At the time of writing, Migaku costs roughly $19.99 per month, or about $499 for a lifetime license — check Migaku's current pricing before making a decision, because it changes. A single year of the subscription comes to around $240.
 
-mLearn costs $0. It runs the AI tutor, OCR, and TTS on your own machine where possible, so there is no per-user inference bill to pass on to you. Optional cloud features — sync, Watch Together rooms, extra OCR and TTS jobs — run on free-tier infrastructure with published monthly quotas: 35 AI explanations, 500 OCR pages, and 1,000 TTS renderings per account.
+mLearn costs $0. It runs the AI tutor, OCR, and TTS on your own machine where possible, so there is no per-user inference bill to pass on to you. Optional cloud features — sync, Watch Together rooms, extra OCR and TTS jobs — run on free infrastructure with published limits: 300 shared AI units per day (Standard 1, Realtime 2), 500 OCR pages, and 1,000 TTS renderings per month per account.
 
 If you mine a few sentences a day, those quotas are the whole product rather than a trial tier. The machine-readable pricing page (pricing.md) lists the numbers so you can verify them instead of trusting this page.
 
